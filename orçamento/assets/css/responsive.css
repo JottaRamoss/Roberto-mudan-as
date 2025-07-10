@@ -1,0 +1,129 @@
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .nav-links {
+    gap: var(--space-md);
+  }
+
+  .section-title h2::after {
+    bottom: -10px;
+  }
+}
+
+/* Dispositivos móveis grandes (576px - 767px) */
+@media (max-width: 767px) {
+  .header {
+    padding: var(--space-sm) 0;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: var(--bg-white);
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-xl) 0;
+    gap: var(--space-lg);
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links a {
+    padding: var(--space-md) var(--space-lg);
+    width: 90%;
+    text-align: center;
+  }
+
+  .nav-links a::after {
+    bottom: 12px;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .hero {
+    padding: 100px 0 60px;
+    text-align: center;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    margin-bottom: var(--space-xl);
+  }
+}
+
+/* Dispositivos móveis pequenos (até 575px) */
+@media (max-width: 575px) {
+  html {
+    font-size: 15px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .service-card {
+    padding: var(--space-lg);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .footer-links {
+    margin-top: var(--space-lg);
+  }
+}
+
+/* Ajustes para orientação paisagem */
+@media (max-width: 767px) and (orientation: landscape) {
+  .hero {
+    min-height: 600px;
+    height: auto;
+    padding: 90px 0 40px;
+  }
+
+  .nav-links {
+    overflow-y: auto;
+    padding: var(--space-md) 0;
+  }
+}
+
+/* Telas de alta densidade (2x) */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+  .hero {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                     url('../images/hero-bg@2x.jpg');
+  }
+}
