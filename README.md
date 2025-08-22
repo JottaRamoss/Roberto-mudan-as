@@ -1,2 +1,8 @@
 # Roberto-mudan-as
-Site Feito para um cliente
+Site De Mudanças Feita sob medida para um cliente
+
+## Tecnologias Utilizadas 
+
+- PHP
+- CSS
+- HTML
